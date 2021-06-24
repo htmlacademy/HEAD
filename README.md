@@ -172,7 +172,7 @@
 значения можно писать через запятую `content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"`. 
 Подробнее в документации [Google Поиска](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag)
 
-```htmk
+```html
 <!-- Указывает Google не показывать поисковую строку sitelinks -->
 <meta name="google" content="nositelinkssearchbox">
 
@@ -217,6 +217,14 @@
 <!-- Монетизация веб-сайтов https://webmonetization.org/docs/getting-started -->
 <meta name="monetization" content="$paymentpointer.example">
 ```
+
+
+```html
+<!-- Регистрация доменного имени -->
+<meta name="parking" content="имя регистратора">
+```
+
+[Подробнее про парковку доменов](https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D0%BA%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2)
 
 - 📖 [Мета-теги, которые понимает Google](https://support.google.com/webmasters/answer/79812?hl=en)
 - 📖 [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
