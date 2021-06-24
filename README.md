@@ -199,7 +199,7 @@
 <meta name="rating" content="General">
 
 <!-- Позволяет контролировать, как передается информация о реферере -->
-<meta name="referrer" content="no-referrer">
+<meta name="referrer " content="no-referrer">
 
 <!-- Отключить автоматическое определение и форматирование возможных телефонных номеров -->
 <meta name="format-detection" content="phone=no">
@@ -222,6 +222,13 @@
 <!-- Подсказывает, что сайт оптимизирован для мобильных устройств-->
 <meta name="HandheldFriendly" content="true">
 ```
+
+```html
+<!-- Соль -->
+<meta name="salt" content="21f157b19463e98d0e9723cf486d620a">
+```
+
+[Про соль подробнее](https://www.php.net/manual/ru/faq.passwords.php#faq.passwords.salt)
 
 ```html
 <!-- Регистрация доменного имени -->
