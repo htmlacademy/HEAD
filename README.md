@@ -31,6 +31,7 @@
   - [360 Browser](#360-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
+- [CSRF](#csrf)
 - [Ссылки на приложения](#ссылки-на-приложения)
 - [Устаревшее](#устаревшее)
 - [Другие ресурсы](#другие-ресурсы)
@@ -615,6 +616,16 @@ Pinterest позволяет запретить людям сохранять с
 ```
 
 **[⬆ вернуться к началу](#оглавление)**.
+
+## CSRF
+
+```html
+<!-- Токен для идентификации формы -->
+<meta name="csrf-token" content="токен">
+<meta name="csrf-param" content="csrf_token">
+```
+
+Подробнее про [CSRF-атаки](https://habr.com/ru/post/274457/)
 
 ## Ссылки на приложения
 
