@@ -151,6 +151,7 @@
 <!-- Управление поведением поисковых машин при осмотре и индексации сайта -->
 <meta name="robots" content="index,follow"><!-- Все поисковые системы -->
 <meta name="googlebot" content="index,follow"><!-- Специфика Google -->
+<meta name="bingbot" content="index,follow"><!-- Специфика Bing -->
 ```
 
 Для роботов есть несколько значений:
@@ -217,8 +218,10 @@
 
 <!-- Монетизация веб-сайтов https://webmonetization.org/docs/getting-started -->
 <meta name="monetization" content="$paymentpointer.example">
-```
 
+<!-- Подсказывает, что сайт оптимизирован для мобильных устройств-->
+<meta name="HandheldFriendly" content="true">
+```
 
 ```html
 <!-- Регистрация доменного имени -->
