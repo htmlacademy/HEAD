@@ -202,7 +202,7 @@
 <meta name="rating" content="General">
 
 <!-- Позволяет контролировать, как передается информация о реферере -->
-<meta name="referrer " content="no-referrer">
+<meta name="referrer" content="no-referrer">
 
 <!-- Отключить автоматическое определение и форматирование возможных телефонных номеров -->
 <meta name="format-detection" content="phone=no">
