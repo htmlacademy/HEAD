@@ -6,7 +6,7 @@
 - Добавили про баг с `ICO` и `SVG`
 - Добавили про webmanifest про фавиконки
 - Добавили устаревшие яндекс табло
-- Добавили устаревшие shortcut4
+- Добавили устаревшие shortcut
 
 ## 1.0.3
 - Добавили устаревший `<meta name="msapplication-TileColor" content="#efefef">`
