@@ -169,7 +169,8 @@
 * `noodp` — запрет на использование описания из dMoz для сниппета;
 * `noydir` — запрет на использование описания из Yahoo! Directory для сниппета.
   
-значения можно писать через запятую. Подробнее в документации [Google Поиска](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag)
+значения можно писать через запятую `content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"`. 
+Подробнее в документации [Google Поиска](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag)
 
 ```htmk
 <!-- Указывает Google не показывать поисковую строку sitelinks -->
