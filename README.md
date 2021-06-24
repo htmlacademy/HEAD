@@ -152,6 +152,9 @@
 <meta name="robots" content="index,follow"><!-- Все поисковые системы -->
 <meta name="googlebot" content="index,follow"><!-- Специфика Google -->
 <meta name="bingbot" content="index,follow"><!-- Специфика Bing -->
+
+<!-- Как часто посещать сайт роботу-->
+<meta content="10 day" name="revisit">
 ```
 
 Для роботов есть несколько значений:
