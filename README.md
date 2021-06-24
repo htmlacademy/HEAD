@@ -226,6 +226,14 @@
 
 [Подробнее про парковку доменов](https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D0%BA%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2)
 
+
+```html
+<!-- Отключает возможность Скайпа звонить по номерам на странице-->
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+```
+
+[Подробнее про отключение Скайпа](http://mpbox.ru/html-and-css-tricks/different/skype-addon.html)
+
 - 📖 [Мета-теги, которые понимает Google](https://support.google.com/webmasters/answer/79812?hl=en)
 - 📖 [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
 - 📖 [ICBM в Википедии](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
