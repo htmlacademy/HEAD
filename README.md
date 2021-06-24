@@ -574,8 +574,6 @@ Pinterest позволяет запретить людям сохранять с
 <meta name="wap-font-scale" content="no">
 ```
 
-- 📖 [UC Browser Docs](https://www.uc.cn/download/UCBrowser_U3_API.doc)
-
 **[⬆ вернуться к началу](#оглавление)**.
 
 ## Ссылки на приложения
@@ -594,8 +592,6 @@ Pinterest позволяет запретить людям сохранять с
 <!-- Web fall back -->
 <meta property="al:web:url" content="https://applinks.org/documentation">
 ```
-
-- 📖 [Ссылки на приложения](https://developers.facebook.com/docs/applinks)
 
 **[⬆ вернуться к началу](#оглавление)**.
 
