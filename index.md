@@ -32,6 +32,7 @@
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
 - [CSRF](#csrf)
+- [Подсказки клиентов](#подсказки-клиентов)
 - [Ссылки на приложения](#ссылки-на-приложения)
 - [Устаревшее](#устаревшее)
 - [Другие ресурсы](#другие-ресурсы)
@@ -94,7 +95,7 @@
 
 <!-- Используется для добавления CSS в документ. Используется для важной стилизации -->
 <style>
-  /* ... */
+/* ... */
 </style>
 
 <!-- Ссылка на внешний JavaScript файл -->
@@ -102,17 +103,17 @@
 
 <!-- Используется для добавление JS в документ-->
 <script>
-  // функция(и) идут здесь
+ // функция(и) идут здесь
 </script>
 
 <!-- Используется на случай если JavaScript отключен в браузере -->
 <noscript>
-  <!-- Альтернатива, когда JS отключен -->
+ <!-- Альтернатива, когда JS отключен -->
 </noscript>
 
 <!-- Используется для объявления HTML-фрагментов, которые могут быть клонированы и вставлены в документ. Если указан в <head>, то <template> может содержать только метаданные -->
 <template>
-
+  
 </template>
 ```
 
@@ -441,18 +442,50 @@ _manifest.webmanifest_
 
 ```html
 <html lang="" itemscope itemtype="https://schema.org/Article">
-<head>
-  <link rel="author" href="">
-  <link rel="publisher" href="">
-  <meta itemprop="name" content="Заголовок контента">.
-  <meta itemprop="description" content="Описание содержимого менее 200 символов">.
-  <meta itemprop="image" content="https://example.com/image.jpg">
+   <head>
+     <link rel="author" href="">
+     <link rel="publisher" href="">
+     <meta itemprop="name" content="Заголовок контента">.
+     <meta itemprop="description" content="Описание содержимого менее 200 символов">.
+     <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
 **Примечание:** Эти мета-теги требуют добавления атрибутов `itemscope` и `itemtype` к тегу `<html>`.
 
 - 📖 [Начало работы - schema.org](https://schema.org/docs/gs.html)
 - 🛠 Протестируйте свою страницу с помощью [Rich Results Test](https://search.google.com/test/rich-results)
+
+
+### JSON-LD
+
+Может использоваться компанией для того, чтобы ваш сайт отображался в графе знаний, когда кто-то набирает ваш запрос. (это панель справа от результатов поиска, которая обычно появляется у крупных брендов.)
+
+```
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "Your Name"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Your Organization"
+    },
+    "headline": "Article Headline",
+    "image": "https://example.com/image.jpg",
+    "datePublished": "2020-02-05T08:00:00+08:00",
+    "dateModified": "2020-03-05T09:20:00+08:00"
+  }
+</script>
+```
+
+- [Спецификация](https://www.w3.org/TR/json-ld11/)
+- [Официальный сайт](https://json-ld.org/)
+- [Документация от Google](https://developers.google.com/search/docs/data-types/article)
+
+**[⬆ вернуться к началу](#оглавление)**.
 
 ### Pinterest
 
@@ -482,11 +515,11 @@ Pinterest позволяет запретить людям сохранять с
 
 ```html
 <link rel="alternate" type="application/json+oembed"
-      href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
-      title="Профиль oEmbed: JSON">
+ href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
+ title="Профиль oEmbed: JSON">
 <link rel="alternate" type="text/xml+oembed"
-      href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
-      title="oEmbed Profile: XML">
+ href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
+ title="oEmbed Profile: XML">
 ```
 
 - 📖 [oEmbed format](https://oembed.com/)
@@ -653,6 +686,20 @@ Pinterest позволяет запретить людям сохранять с
 
 Подробнее про [CSRF-атаки](https://habr.com/ru/post/274457/)
 
+**[⬆ вернуться к началу](#оглавление)**.
+
+## Подсказки клиентов
+
+``` html
+<!-- Включает подсказки клиентов -->
+<meta http-equiv="Accept-CH" content="DPR">
+<meta http-equiv="Accept-CH" content="DPR, Width">
+```
+
+[Подробнее про подсказки клиентов](https://developer.mozilla.org/en-US/docs/Glossary/Client_hints)
+
+**[⬆ вернуться к началу](#оглавление)**.
+
 ## Ссылки на приложения
 
 ```html
@@ -748,14 +795,14 @@ Pinterest позволяет запретить людям сохранять с
 _manifest.jons_
 ```json
 {
-  "version": "1.0",
-  "api_version": 1,
-  "layout":
-  {
-    "logo": "https://webliberty.ru/wp-content/themes/lime/images/manifest.png",
-    "color": "#e9ffd0",
-    "show_title": false
-  }
+"version": "1.0",
+"api_version": 1,
+"layout":
+	{
+	"logo": "https://webliberty.ru/wp-content/themes/lime/images/manifest.png",
+	"color": "#e9ffd0",
+	"show_title": false
+	}
 }
 ```
 
