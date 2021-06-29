@@ -157,6 +157,9 @@
 <!-- Цвет темы для Chrome, Firefox OS, Opera и Safari 15 -->
 <meta name="theme-color" content="#4285f4">
 
+<!-- Список ключевых слов -->
+<meta name="keywords" content="ваши, теги">
+
 <!-- Краткое описание документа (ограничение до 150 символов) -->
 <!-- Это содержимое *может* использоваться в результатах поисковых систем. -->
 <meta name="description" content="Описание страницы">.
@@ -170,6 +173,9 @@
 
 <!-- Как часто посещать сайт роботу-->
 <meta content="10 day" name="revisit">
+
+<!-- Дата последнего изменения документа -->
+<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
 ```
 
 Для роботов есть несколько значений:
@@ -243,9 +249,18 @@
 <!-- Указывает автора документа -->
 <meta name="author" content="Nikolai Shabalin">
 
+<!-- Принадлежность авторских прав-->
+<meta name="copyright" content="Nikolai Shabalin">
+
+<!-- Создатель документа -->
+<meta name="creator" content="Nikolai Shabalin">
+
 <!-- Перезагружает страницу через указанное количество секунд -->
 <meta http-equiv="Refresh" content="20">
 <meta http-equiv="Refresh" content="20; URL=page4.html"> <!-- Перезагружает к указанной странице -->
+
+<!-- Язык документа -->
+<meta name="language" content="Russian">
 ```
 
 ```html
