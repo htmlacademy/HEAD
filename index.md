@@ -34,7 +34,6 @@
   - [UC Mobile Browser](#uc-mobile-browser)
 - [CSRF](#csrf)
 - [Подсказки клиентов](#подсказки-клиентов)
-- [Ссылки на приложения](#ссылки-на-приложения)
 - [Устаревшее](#устаревшее)
 - [Другие ресурсы](#другие-ресурсы)
 - [Связанные проекты](#связанные-проекты)
@@ -96,7 +95,7 @@
 
 <!-- Используется для добавления CSS в документ. Используется для важной стилизации -->
 <style>
-  /* ... */
+/* ... */
 </style>
 
 <!-- Ссылка на внешний JavaScript файл -->
@@ -104,17 +103,17 @@
 
 <!-- Используется для добавление JS в документ-->
 <script>
-  // функция(и) идут здесь
+ // функция(и) идут здесь
 </script>
 
 <!-- Используется на случай если JavaScript отключен в браузере -->
 <noscript>
-  <!-- Альтернатива, когда JS отключен -->
+ <!-- Альтернатива, когда JS отключен -->
 </noscript>
 
 <!-- Используется для объявления HTML-фрагментов, которые могут быть клонированы и вставлены в документ. Если указан в <head>, то <template> может содержать только метаданные -->
 <template>
-
+  
 </template>
 ```
 
@@ -154,7 +153,7 @@
 <!-- Название веб-приложения (должно использоваться только в том случае, если веб-сайт используется как приложение) -->
 <meta name="application-name" content="Имя приложения">.
 
-<!-- Цвет темы для Chrome, Firefox OS, Opera и Safari 15 -->
+<!-- Цвет вкладки для Chrome на Android, Vivaldi, Safari 15 -->
 <meta name="theme-color" content="#4285f4">
 
 <!-- Список ключевых слов -->
@@ -742,25 +741,6 @@ Pinterest позволяет запретить людям сохранять с
 
 **[⬆ вернуться к началу](#оглавление)**.
 
-## Ссылки на приложения
-
-```html
-<!-- iOS -->
-<meta property="al:ios:url" content="applinks://docs">
-<meta property="al:ios:app_store_id" content="12345">
-<meta property="al:ios:app_name" content="App Links">
-
-<!-- Android -->
-<meta property="al:android:url" content="applinks://docs">
-<meta property="al:android:app_name" content="App Links">
-<meta property="al:android:package" content="org.applinks">
-
-<!-- Web fall back -->
-<meta property="al:web:url" content="https://applinks.org/documentation">
-```
-
-**[⬆ вернуться к началу](#оглавление)**.
-
 ## Устаревшее
 
 ###  Значок прикрепленной вкладки Safari
@@ -850,6 +830,25 @@ _manifest.jons_
 
 Яндекс для своего браузера, а точнее их [табло](https://browser.yandex.ru/help/personalization/tableau.html) позволяет указать дополнительную иконку.
 Сейчас Яндекс удалил техническую документацию по этой иконки и начали работать со стандартным веб-манифестом.
+
+### Ссылки на приложения
+
+[Поддержка прекращена](https://developers.facebook.com/docs/graph-api/changelog/2020-02-03-endpoint-deprecations#links)
+
+```html
+<!-- iOS -->
+<meta property="al:ios:url" content="applinks://docs">
+<meta property="al:ios:app_store_id" content="12345">
+<meta property="al:ios:app_name" content="App Links">
+
+<!-- Android -->
+<meta property="al:android:url" content="applinks://docs">
+<meta property="al:android:app_name" content="App Links">
+<meta property="al:android:package" content="org.applinks">
+
+<!-- Web fall back -->
+<meta property="al:web:url" content="https://applinks.org/documentation">
+```
 
 **[⬆ вернуться к началу](#оглавление)**.
 
