@@ -19,7 +19,9 @@
   - [Twitter Card](#twitter-card)
   - [Twitter Privacy](#twitter-privacy)
   - [Schema.org](#schemaorg)
+
 Упс! сколько удалено то выше!
+
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
   - [QQ/Wechat](#qqwechat)
