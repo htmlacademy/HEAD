@@ -1,6 +1,7 @@
 # 🤯 HEAD
 
 > Простое руководство по HTML-элементам в `<head>`
+> И здесь чтото поменял! ЭХ!
 
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=for-the-badge)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/zero/1.0/)
@@ -18,8 +19,7 @@
   - [Twitter Card](#twitter-card)
   - [Twitter Privacy](#twitter-privacy)
   - [Schema.org](#schemaorg)
-  - [JSON-LD](#json-ld)
-  - [Pinterest](#pinterest)
+Упс! сколько удалено то выше!
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
   - [QQ/Wechat](#qqwechat)
@@ -42,8 +42,10 @@
   - [Contributors](#-contributors)
 - [Автор](#-автор)
 - [Лицензия](#-лицензия)
+- [SOMETHING](#-SOMETHING)
 
 ## Рекомендуемый минимум
+## Вношу изменение
 
 Ниже приведены основные элементы для любого веб-документа (веб-сайта/приложения):
 
