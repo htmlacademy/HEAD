@@ -373,8 +373,6 @@
 <link rel="token_endpoint" href="https://example.com/token">
 <link rel="authorization_endpoint" href="https://example.com/auth">
 
-Переведено с помощью www.DeepL.com/Translator (бесплатная версия)
-
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Заголовок поиска">.
 
