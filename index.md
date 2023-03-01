@@ -53,7 +53,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--
    Вышеуказанные 2 мета-тега *должны* стоять как можно раньше в <head>.
-   для обеспечения правильного отображения документов.
+   Для обеспечения правильного отображения документов.
    Любой другой элемент заголовка должен идти *после* этих тегов.
   -->
   <title>Заголовок страницы</title>
@@ -102,7 +102,7 @@
 <!-- Ссылка на внешний JavaScript файл -->
 <script src="script.js"></script>
 
-<!-- Используется для добавление JS в документ-->
+<!-- Используется для добавления JavaScript в документ-->
 <script>
  // функция(и) идут здесь
 </script>
@@ -125,7 +125,7 @@
 ```html
 <!--
  Вышеуказанные 2 мета-тега *должны* стоять как можно раньше в <head>.
- для обеспечения правильного отображения документов.
+ Для обеспечения правильного отображения документов.
  Любой другой элемент заголовка должен идти *после* этих тегов.
 -->
 <meta charset="utf-8">
@@ -199,11 +199,11 @@
 * `notranslate` - не предлагать перевести эту страницу в результатах поиска.
 * `noimageindex` - не индексировать изображения на странице.
 * `unavailable_after: [date/time]` - запрещает показывать страницу в результатах поиска после даты и времени.
-* `noyaca` - запрет на использование информации из Яндекс.Каталога для описания в сниппете
+* `noyaca` - запрет на использование информации из Яндекса. Каталога для описания в сниппете
 * `noodp` — запрет на использование описания из dMoz для сниппета;
 * `noydir` — запрет на использование описания из Yahoo! Directory для сниппета.
 
-значения можно писать через запятую `content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"`.
+Значения можно писать через запятую `content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"`.
 Подробнее в документации [Google Поиска](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag)
 
 ```html
@@ -232,10 +232,27 @@
 
 <!-- Позволяет контролировать, как передается информация о реферере -->
 <meta name="referrer" content="no-referrer">
+```
 
+```html
 <!-- Отключить автоматическое определение и форматирование возможных телефонных номеров -->
-<meta name="format-detection" content="phone=no">
+<meta name="format-detection" content="telephone=no">
 
+<!-- а также можно отключить дату, адрес, url и email -->
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="url=no">
+<meta name="format-detection" content="email=no">
+
+<!-- можно комбинировать несколько значений-->
+<meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+```
+Подробнее в:
+- [Документации для разработчиков от Apple](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+- [Гисте про комбинирование](https://gist.github.com/yuezk/15c5bb1370e30d0a2a60)
+
+
+```html
 <!-- Полностью отказаться от предварительной выборки DNS, установив значение "off" -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
@@ -417,7 +434,7 @@
 
 Используется для отображения ярлыка на домашнем экране IPhone и IPad.
 
-Выше указаны три версии для фавиконки фавиконки, но можно добавить ещё 2, чтобы учесть большинство современных браузеров. Чтобы не увеличивать HTML другие фавиконки добавляют в веб-манифест
+Выше указаны три версии для фавиконки, но можно добавить ещё 2, чтобы учесть большинство современных браузеров. Чтобы не увеличивать HTML другие фавиконки добавляют в веб-манифест
 
 ```html
 <link rel="manifest" href="/manifest.webmanifest">
@@ -594,7 +611,7 @@ Pinterest позволяет запретить людям сохранять с
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
 <!-- Отключить автоматическое определение и форматирование возможных телефонных номеров -->
-<meta name="format-detection" content="phone=no">
+<meta name="format-detection" content="telephone=no">
 
 <!-- Иконка запуска (180x180px или больше) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
@@ -752,7 +769,7 @@ Pinterest позволяет запретить людям сохранять с
 
 ###  Значок прикрепленной вкладки Safari
 
-В macOS 10.11 в появились закреплённые закладки, но стандартные не подошли. Поэтому создали новый тип фавиконки. Далее эти значки использовались в тач-баре Макбуков.
+В macOS 10.11 появились закреплённые закладки, но стандартные не подошли. Поэтому создали новый тип фавиконки. Далее эти значки использовались в тач-баре Макбуков.
 
 Для таких значков есть ряд [требований](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html#//apple_ref/doc/uid/TP40002051-CH18-SW1):
 - только SVG
@@ -771,7 +788,7 @@ Pinterest позволяет запретить людям сохранять с
 Сейчас для тач-бара и закрепленной вкладки хорошо подходят:
 - Apple touch иконки `<link rel="apple-touch-icon" href="/custom_icon.png">`
 - Фавиконка  `<link rel="icon" href="favicon.png">`
-- Монограмма. Если никаких иконок нет, то значок создаётся из первой буквы заголовка страницы или имени домана верхнего уровня
+- Монограмма. Если никаких иконок нет, то значок создаётся из первой буквы заголовка страницы или имени домена верхнего уровня
 
 Начиная с Safari 12 отдельный вариант иконок стал не нужен.
 
