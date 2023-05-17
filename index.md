@@ -96,7 +96,7 @@
 
 <!-- Используется для добавления CSS в документ. Используется для важной стилизации -->
 <style>
-/* ... */
+  /* ... */
 </style>
 
 <!-- Ссылка на внешний JavaScript файл -->
@@ -104,17 +104,17 @@
 
 <!-- Используется для добавления JavaScript в документ-->
 <script>
- // функция(и) идут здесь
+  // функция(и) идут здесь
 </script>
 
 <!-- Используется на случай если JavaScript отключен в браузере -->
 <noscript>
- <!-- Альтернатива, когда JS отключен -->
+  <!-- Альтернатива, когда JS отключен -->
 </noscript>
 
 <!-- Используется для объявления HTML-фрагментов, которые могут быть клонированы и вставлены в документ. Если указан в <head>, то <template> может содержать только метаданные -->
 <template>
-  
+
 </template>
 ```
 
@@ -170,20 +170,6 @@
 <meta name="robots" content="index,follow"><!-- Все поисковые системы -->
 <meta name="googlebot" content="index,follow"><!-- Специфика Google -->
 <meta name="bingbot" content="index,follow"><!-- Специфика Bing -->
-
-<!-- Как часто посещать сайт роботу-->
-<meta content="10 day" name="revisit">
-
-<!-- Дата последнего изменения документа -->
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
-
-<!-- Используется как description, но для научных статей-->
-<meta name="abstract" content="">
-<meta name="topic" content="">
-<meta name="summary" content="">
-
-<!-- Для обратной связи -->
-<meta name="reply-to" content="email@hotmail.com">
 ```
 
 Для роботов есть несколько значений:
@@ -289,6 +275,40 @@
 
 <!-- Язык документа -->
 <meta name="language" content="Russian">
+```
+
+```html
+<!-- контролирует занесение страниц в кэш-память -->
+<meta http-equiv="pragma" content="no-cache">
+```
+[Подробнее про pragma](https://mpbox.ru/html/meta-tags/http-equiv/pragma/).
+
+```html
+<!-- Сделать повторный сетевой запрос после указанной даты и времени -->
+<meta http-equiv="Expires" content="Sun, 01 Jan 2012 00:00:01 GMT" />
+```
+[Подробнее про expires](https://karashchuk.com/HTML/meta_Expires/).
+
+```html
+<!-- Как часто посещать сайт роботу-->
+<meta name="revisit" content="10 day">
+
+<!-- Дата последнего изменения документа -->
+<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
+
+<!-- Как часто посещать сайт роботу-->
+<meta name="revisit-after" content="10 day">
+```
+`revisit-after` поисковыми роботами [чаще всего игнорируется](https://developers.google.com/search/blog/2007/12/answering-more-popular-picks-meta-tags).
+
+```html
+<!-- Используется как description, но для научных статей-->
+<meta name="abstract" content="">
+<meta name="topic" content="">
+<meta name="summary" content="">
+
+<!-- Для обратной связи -->
+<meta name="reply-to" content="email@hotmail.com">
 ```
 
 ```html
