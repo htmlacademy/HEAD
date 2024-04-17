@@ -454,7 +454,7 @@
 - `video`: видеофайл
 - `worker`: воркер
 
-У `image` сть уникальная возможность указать адаптивную картинку:
+У `image` есть уникальная возможность указать адаптивную картинку:
 ```html
 <link rel="preload" as="image" imagesrcset="wolf_400px.jpg 400w, wolf_800px.jpg 800w, wolf_1600px.jpg 1600w">
 ```
@@ -897,7 +897,7 @@ Pinterest позволяет запретить людям сохранять с
 <link rel="yandex-tableau-widget" href="/manifest.json">
 ```
 
-_manifest.jons_
+_manifest.json_
 ```json
 {
 "version": "1.0",
